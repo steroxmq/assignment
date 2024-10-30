@@ -14,7 +14,7 @@ public class Student implements Person {
 
     // Implement the getInfo() method from Person interface
     @Override
-    public String getInfo() {
+    public String getInfo() {  // Change void to String
         return "Student ID: " + studentId + ", Name: " + name + ", Surname: " + surname + ", Age: " + age;
     }
 }

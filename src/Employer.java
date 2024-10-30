@@ -10,8 +10,10 @@ public class Employer implements Person {
     }
 
     @Override
-    public String getInfo() {
-        return "Name: " + name + ", Surname: " + surname + ", Age: " + age;
+    public String getInfo() {  // Change void to String
+        System.out.println("Name: " + name + ", Surname: " + surname);
+        System.out.println("Years to retirement: " + calculateYearsToRetirement());
+        return null;
     }
 
     public int calculateYearsToRetirement() {
